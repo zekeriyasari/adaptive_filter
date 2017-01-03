@@ -12,7 +12,7 @@ N = 500  # number of input data samples to the equalizer.
 M1 = 4  # number of taps of channel.
 M2 = 11  # number of taps of equalizer
 L = 200  # number of trials.
-delay = int(0.5 * (M1 + M2))
+delay = int(M1 / 2) + int(M2 / 2)
 
 # try the system four channel models.
 omega = np.array([2.9, 3.1, 3.3, 3.5])
