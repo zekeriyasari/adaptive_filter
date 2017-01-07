@@ -52,9 +52,18 @@ for i in range(channels.shape[0]):
 
     J_avg = J.mean(axis=0)
     w_avg = w.mean(axis=0)
-    ax1.semilogy(J_avg, label='$w = {}$'.format(channels[i]))
-    ax2[i].stem(w_avg, label='$w = {}$'.format(channels[i]))
 
-plt.grid(which='both')
-plt.legend()
+    # FIXME: Plotting not be in the main loop of the algorithm.
+    ax1.semilogy(J_avg, label='$H_{}$'.format(str(i)))
+    ax2[i].stem(w_avg, label='$H_{}$'.format(str(i)))
+    ax2[i].set_xlabel('$k$')
+    ax2[i].set_ylabel('$\hat{w}_k$')
+    ax2[i].legend()
+
+
+ax1.legend(loc='upper right')
+ax1.set_xlabel('$Number \; of \; iterations, \; n$')
+ax1.set_ylabel('$Ensemble-averaged \; square \; error$')
+
+# plt.tight_layout()
 plt.show()
