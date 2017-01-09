@@ -1,9 +1,9 @@
 # AR stochastic process.
 
-from utils import *
 from scipy import signal
 import matplotlib.pyplot as plt
 
+from miscellenous.utils import *
 
 N = 256  # number of data points.
 M = 2  # number of filter taps.

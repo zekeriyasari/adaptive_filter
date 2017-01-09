@@ -1,9 +1,10 @@
 # Wiener filter implementation.
 
 
-from utils import *
 from scipy import signal
 import matplotlib.pyplot as plt
+
+from miscellenous.utils import *
 
 N = 1024
 M = 2

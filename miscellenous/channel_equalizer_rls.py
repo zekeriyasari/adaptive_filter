@@ -1,10 +1,12 @@
 # Channel equalizer implemented using
-# LMS adaptive filtering.
+# RMS adaptive filtering.
 
 
-from utils import *
-from padasip import input_from_history, FilterLMS
+from padasip import input_from_history, FilterRLS
 import matplotlib.pyplot as plt
+
+from miscellenous.utils import *
+
 
 
 # determine simulation parameters.
@@ -29,7 +31,7 @@ for i in range(channels.shape[0]):
     h = channels[i]
 
     # construct the equalizer.
-    f = FilterLMS(n=M2, mu=0.001, w='zeros')
+    f = FilterRLS(n=M2, mu=0.005, w='zeros')
 
     J = np.zeros((L, N))
     w = np.zeros((L, M2))
@@ -59,7 +61,6 @@ for i in range(channels.shape[0]):
     ax2[i].set_xlabel('$k$')
     ax2[i].set_ylabel('$\hat{w}_k$')
     ax2[i].legend()
-
 
 ax1.legend(loc='upper right')
 ax1.set_xlabel('$Number \; of \; iterations, \; n$')

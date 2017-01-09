@@ -2,13 +2,15 @@
 # LMS adaptive filtering.
 
 
-from utils import *
-from padasip import input_from_history, FilterLMS
+from padasip import input_from_history, FilterRLS
 import matplotlib.pyplot as plt
+
+from miscellenous.utils import *
+
 
 
 # determine simulation parameters.
-N = 500  # number of input data samples to the equalizer.
+N = 200  # number of input data samples to the equalizer.
 M1 = 4  # number of taps of channel.
 M2 = 11  # number of taps of equalizer
 L = 200  # number of trials.
@@ -27,7 +29,7 @@ for i in range(len(omega)):
                                  np.arange(M1))])  # channel impulse response
 
     # construct the equalizer.
-    f = FilterLMS(n=M2, mu=0.075, w='zeros')
+    f = FilterRLS(n=M2, mu=0.9, eps=0.004, w='zeros')
 
     J = np.zeros((L, N))
     w = np.zeros((L, M2))
