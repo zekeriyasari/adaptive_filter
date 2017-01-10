@@ -7,7 +7,7 @@ def input_from_history(data_sequence, m, bias=False):
     :param data_sequence: ndarray,
         data_sequence vector
     :param m: int,
-        number of columns in the data_matrix, i.e
+        number of columns in the data_matrix, i.ksi
     :param bias:
     :return:
     """

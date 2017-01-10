@@ -20,11 +20,12 @@ l = 200  # number of trials.
 delay = int(m1 / 2) + int(m2 / 2)
 
 # try the system four channel models.
-omega = np.array([2.9, 3.1, 3.3, 3.5])
+# omega = np.array([2.9, 3.1, 3.3, 3.5])
+omega = np.array([3.1])
 
 # take two figures for the plots
 fig1, ax1 = plt.subplots(1)  # plots the learning curves.
-fig2, ax2 = plt.subplots(len(omega))  # plots found filter taps.
+# fig2, ax2 = plt.subplots(len(omega))  # plots found filter taps.
 
 for i in range(len(omega)):
     # construct the channel.
@@ -65,7 +66,7 @@ for i in range(len(omega)):
     J_avg = J.mean(axis=0)
     w_avg = w.mean(axis=0)
     ax1.semilogy(J_avg, label='$H_{}$'.format(i))
-    ax2[i].stem(w_avg, label='$H_{}$'.format(i))
+    # ax2[i].stem(w_avg, label='$H_{}$'.format(i))
 
 
 plt.grid(which='both')

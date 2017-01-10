@@ -13,7 +13,6 @@ class BaseFilter(object):
     def __init__(self, m, w='random'):
         self._m = None  # number of filter taps.
         self._w = None  # filter tap-weights.
-        self._adapt_func = None  # adaptation algorithm
 
         self.m = m
         self.w = w

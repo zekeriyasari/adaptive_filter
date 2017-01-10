@@ -27,7 +27,7 @@ class LMSFilter(BaseFilter):
         try:
             value = float(value)
         except:
-            raise ValueError('Step size cannot be converted to float')
+            raise TypeError('Step size cannot be converted to float')
 
         assert co.MU_LMS_MIN <= value <= co.MU_LMS_MAX, 'Step size must be in range({}, {})'.format(co.MU_LMS_MIN,
                                                                                                     co.MU_LMS_MAX)
@@ -61,18 +61,18 @@ class LMSFilter(BaseFilter):
                 n-by-1 filtered output
             w: ndarray
                 m-by-1 filter tap weights
-            e: ndarray
+            ksi: ndarray
                 n-by-1 filtering error.
         """
 
         n = u_matrix.shape[0]
         assert d_vector.size == n, 'The length of vector d and matrix x must agree.'
         assert type(u_matrix) == np.ndarray and type(d_vector) == np.ndarray, \
-            'u_matrix and x_matrix must e numpy.ndarray'
+            'u_matrix and x_matrix must ksi numpy.ndarray'
 
         y = np.zeros(n)
         e = np.zeros(n)
         for l in range(n):
             y[l], e[l] = self.adapt(d_vector[l], u_matrix[l])
-        return y, e, self.w
+        return y, e, self._w
 
