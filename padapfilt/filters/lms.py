@@ -1,3 +1,4 @@
+
 from padapfilt.utils import *
 from padapfilt.filters.base_filter import BaseFilter
 import padapfilt.constants as co
@@ -24,7 +25,7 @@ class LMSFilter(BaseFilter):
     @mu.setter
     def mu(self, value):
         try:
-            float(value)
+            value = float(value)
         except:
             raise ValueError('Step size cannot be converted to float')
 
