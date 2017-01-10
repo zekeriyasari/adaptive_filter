@@ -19,13 +19,10 @@ class TestUtils(TestCase):
     def test_acf(self):
         pass
 
-    def test_raised_cosine(self):
-        pass
-
     def test_fir_filter(self):
         pass
 
-    def test_init_wieghts(self):
+    def test_init_weights(self):
         pass
 
 

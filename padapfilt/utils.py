@@ -2,6 +2,15 @@ import numpy as np
 
 
 def input_from_history(data_sequence, m, bias=False):
+    """
+    Creates the input n-by-m data_matrix from the data_sequence vector
+    :param data_sequence: ndarray,
+        data_sequence vector
+    :param m: int,
+        number of columns in the data_matrix, i.e
+    :param bias:
+    :return:
+    """
     assert type(m) == int and m > 0, 'The argument m must be positive int.'
     assert type(data_sequence) == np.ndarray, 'The data_sequence must be numpy array.'
 
@@ -22,13 +31,6 @@ def acf(x, l):
     y = np.roll(x, l)
     y[:l] = 0
     return np.correlate(x, y, mode='valid')
-
-
-def raised_cos(x_in, w_in=2.9):
-    """
-    Raised cosine inter-symbol interference channel model.
-    """
-    return 0.5 * (1 + np.cos(2 * np.pi / w_in * (x_in - 2)))
 
 
 def fir_filter(x, w):

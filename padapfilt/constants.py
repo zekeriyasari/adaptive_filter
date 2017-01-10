@@ -5,6 +5,9 @@ All settings (constants) for the whole library are stored in this file.
 These settings are often used in multiple files, thus why it is all in one file.
 """
 
+# Filter initial weights options.
+init_weight_opts = {'random': 0, 'zeros': 1}
+
 # LMS adaptive filter
 
 MU_LMS = 0.01

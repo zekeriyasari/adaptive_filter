@@ -1,30 +1,36 @@
-
 from padapfilt.utils import *
+from padapfilt.filters.base_filter import BaseFilter
 import padapfilt.constants as co
 
 
-class LMSFilter(object):
+class LMSFilter(BaseFilter):
+    """
+    LMS filter class.
+    """
+
     _count = 0
+    _kind = 'LMS'
 
     def __init__(self, m, mu=co.MU_LMS, w='random'):
-        self._kind = 'LMS'
-        self._m = check_int(m, 'filter taps must be integers')
-        self._mu = check_float_range(mu, co.MU_LMS_MIN, co.MU_LMS_MAX, 'mu')
-        self._w = init_weights(w, self._m)
+        super().__init__(m, w)
+        self._mu = None
+        self.mu = mu
         self._count += 1
 
-    def estimate(self, u):
-        """
-        compute filter output.
+    @property
+    def mu(self):
+        return self._mu
 
-        :param u: ndarray,
-            m-by-1 tap input vector
-        :return y:  flaot,
-            filter output i.e. estimated value of desired response.
-        """
+    @mu.setter
+    def mu(self, value):
+        try:
+            float(value)
+        except:
+            raise ValueError('Step size cannot be converted to float')
 
-        y = self._w.dot(u)
-        return y
+        assert co.MU_LMS_MIN <= value <= co.MU_LMS_MAX, 'Step size must be in range({}, {})'.format(co.MU_LMS_MIN,
+                                                                                                    co.MU_LMS_MAX)
+        self._mu = value
 
     def adapt(self, d, u):
         """
@@ -36,7 +42,8 @@ class LMSFilter(object):
         """
         y = self.estimate(u)
         e = d - y
-        self._w += self._mu + u * e
+        dw = self._mu * u * e
+        self._w += dw
         return y, e
 
     def run(self, d_vector, u_matrix):
@@ -61,11 +68,10 @@ class LMSFilter(object):
         assert d_vector.size == n, 'The length of vector d and matrix x must agree.'
         assert type(u_matrix) == np.ndarray and type(d_vector) == np.ndarray, \
             'u_matrix and x_matrix must e numpy.ndarray'
+
         y = np.zeros(n)
         e = np.zeros(n)
         for l in range(n):
             y[l], e[l] = self.adapt(d_vector[l], u_matrix[l])
-        return y, e, self._w
-
-
+        return y, e, self.w
 
