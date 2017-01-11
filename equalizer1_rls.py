@@ -62,8 +62,8 @@ for i in range(channels.shape[0]):
     J_avg = J.mean(axis=0)
     w_avg = w.mean(axis=0)
     ax1.semilogy(J_avg, label='$H_{}$'.format(i))
+    ax1.legend()
     ax2[i].stem(w_avg, label='$H_{}$'.format(i))
+    ax2[i].legend()
 
-
-ax1.legend()
 plt.show()

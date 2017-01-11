@@ -50,7 +50,7 @@ for i in range(len(omega)):
         x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
         # generate the noise.
-        v = np.sqrt(0.1) * np.random.randn(n + m2 - 1)
+        v = np.sqrt(0.001) * np.random.randn(n + m2 - 1)
 
         # filter the data from the channel.
         data_matrix = input_from_history(x, m1)
@@ -82,6 +82,7 @@ for i in range(len(omega)):
 
     ax1.semilogy(J_lms_avg, label='$LMS$')
     ax1.semilogy(J_rls_avg, label='$RLS$')
+    ax1.legend()
 
     ax2[0].stem(w_rls_avg, label='$LMS$')
     ax2[0].legend()

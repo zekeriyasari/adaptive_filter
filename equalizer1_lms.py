@@ -6,7 +6,7 @@ from padapfilt.filters.lms import *
 from plotting import *
 
 # determine simulation parameters.
-n = 12500  # number of input data samples to the equalizer.
+n = 2000  # number of input data samples to the equalizer.
 m1 = 3  # number of taps of channel.
 m2 = 21  # number of taps of equalizer
 l = 100  # number of trials.
@@ -29,7 +29,7 @@ for i in range(channels.shape[0]):
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer.
-    f2 = LMSFilter(m2, mu=0.001, w='zeros')
+    f2 = LMSFilter(m2, mu=0.01, w='zeros')
 
     J = np.zeros((l, n))
     w = np.zeros((l, m2))
@@ -62,8 +62,8 @@ for i in range(channels.shape[0]):
     J_avg = J.mean(axis=0)
     w_avg = w.mean(axis=0)
     ax1.semilogy(J_avg, label='$H_{}$'.format(i))
+    ax1.legend()
     ax2[i].stem(w_avg, label='$H_{}$'.format(i))
+    ax2[i].legend()
 
-
-ax1.legend()
 plt.show()

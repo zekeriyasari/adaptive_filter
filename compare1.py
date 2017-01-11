@@ -13,13 +13,12 @@ def raised_cos(x_in, w_in=2.9):
 
 
 # determine simulation parameters.
-n = 12500  # number of input data samples to the equalizer.
+n = 5000  # number of input data samples to the equalizer.
 m1 = 3  # number of taps of channel.
 m2 = 11  # number of taps of equalizer
 l = 100  # number of trials.
 delay = int(m1 / 2) + int(m2 / 2)
 
-# try the system four channel models.
 # try the system for different  channel models.
 channels = np.array([[0.25, 1.0, 0.25]])
 
@@ -35,10 +34,10 @@ for i in range(channels.shape[0]):
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer with lms filter.
-    f_lms = LMSFilter(m2, mu=0.001, w='zeros')
+    f_lms = LMSFilter(m2, mu=0.01, w='zeros')
 
     # construct the equalizer with lms filter.
-    f_rls = RLSFilter(m2, w='zeros', delta=0.004, lamda=0.98)
+    f_rls = RLSFilter(m2, w='zeros', delta=0.005, lamda=0.98)
 
     J_lms = np.zeros((l, n))
     w_lms = np.zeros((l, m2))
@@ -49,7 +48,7 @@ for i in range(channels.shape[0]):
         x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
         # generate the noise.
-        v = np.sqrt(0.001) * np.random.randn(n + m2 - 1)
+        v = np.sqrt(0.0001) * np.random.randn(n + m2 - 1)
 
         # filter the data from the channel.
         data_matrix = input_from_history(x, m1)
@@ -81,6 +80,7 @@ for i in range(channels.shape[0]):
 
     ax1.semilogy(J_lms_avg, label='$LMS$')
     ax1.semilogy(J_rls_avg, label='$RLS$')
+    ax1.legend()
 
     ax2[0].stem(w_rls_avg, label='$LMS$')
     ax2[0].legend()
