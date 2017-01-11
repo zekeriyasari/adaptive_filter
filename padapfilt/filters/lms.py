@@ -12,7 +12,7 @@ class LMSFilter(BaseFilter):
     _count = 0
     _kind = 'LMS'
 
-    def __init__(self, m, mu=co.MU_LMS, w='random'):
+    def __init__(self, m, w='zeros', mu=co.MU_LMS):
         super().__init__(m, w)
         self._mu = None
         self.mu = mu

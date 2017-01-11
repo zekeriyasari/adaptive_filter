@@ -70,7 +70,7 @@ class RLSFilter(BaseFilter):
         ksi = d - y_pre
         dw = k * ksi
         self._w += dw
-        self._p_matrix = 1 / self._lamda * (self._p_matrix - k.dot(u.T.dot(self._p_matrix)))
+        self._p_matrix = 1 / self._lamda * (self._p_matrix - np.outer(k, u.T.dot(self._p_matrix)))
         return y_pre, ksi
 
     def run(self, d_vector, u_matrix):
