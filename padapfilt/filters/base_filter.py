@@ -59,5 +59,11 @@ class BaseFilter(object):
         y = self._w.dot(u)
         return y
 
-
-
+    def reset(self, *args):
+        """
+        Resets the filter tap-weights.
+        """
+        if args:
+            self.w = args
+        else:
+            self._w = np.zeros(len(self._w))

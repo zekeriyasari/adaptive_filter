@@ -13,30 +13,29 @@ def raised_cos(x_in, w_in=2.9):
 
 
 # determine simulation parameters.
-n = 750  # number of input data samples to the equalizer.
-m1 = 5  # number of taps of channel.
+n = 12500  # number of input data samples to the equalizer.
+m1 = 3  # number of taps of channel.
 m2 = 11  # number of taps of equalizer
-l = 200  # number of trials.
+l = 100  # number of trials.
 delay = int(m1 / 2) + int(m2 / 2)
 
 # try the system four channel models.
-# omega = np.array([2.9, 3.1, 3.3, 3.5])
-omega = np.array([3.1])
+# try the system for different  channel models.
+channels = np.array([[0.25, 1.0, 0.25]])
 
 # take two figures for the plots
 fig1, ax1 = get_learning_curve_plot()  # plots the learning curves.
 fig2, ax2 = get_tap_weights_graph(2)  # plots found filter taps.
 
-for i in range(len(omega)):
+for i in range(channels.shape[0]):
     # construct the channel.
-    h = np.array([y for y in map(lambda t: raised_cos(t, w_in=omega[i]) if 1 <= t <= 3 else 0,
-                                 np.arange(m1))])  # channel impulse response
+    h = channels[i]
 
     # construct the channel filter
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer with lms filter.
-    f_lms = LMSFilter(m2, mu=0.075, w='zeros')
+    f_lms = LMSFilter(m2, mu=0.001, w='zeros')
 
     # construct the equalizer with lms filter.
     f_rls = RLSFilter(m2, w='zeros', delta=0.004, lamda=0.98)
@@ -50,7 +49,7 @@ for i in range(len(omega)):
         x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
         # generate the noise.
-        v = np.sqrt(0.1) * np.random.randn(n + m2 - 1)
+        v = np.sqrt(0.001) * np.random.randn(n + m2 - 1)
 
         # filter the data from the channel.
         data_matrix = input_from_history(x, m1)

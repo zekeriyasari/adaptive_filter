@@ -64,14 +64,14 @@ class RLSFilter(BaseFilter):
         """
 
         num = self._p_matrix.dot(u)
-        den = self._lamda + u.T.dot(self._p_matrix.dot(u))
+        den = self._lamda + u.dot(self._p_matrix.dot(u))
         k = num / den
-        y_pre = self.estimate(u)
-        ksi = d - y_pre
+        y = self.estimate(u)
+        ksi = d - y
         dw = k * ksi
         self._w += dw
-        self._p_matrix = 1 / self._lamda * (self._p_matrix - np.outer(k, u.T.dot(self._p_matrix)))
-        return y_pre, ksi
+        self._p_matrix = 1 / self._lamda * (self._p_matrix - np.outer(k, u.dot(self._p_matrix)))
+        return y, ksi
 
     def run(self, d_vector, u_matrix):
         """
