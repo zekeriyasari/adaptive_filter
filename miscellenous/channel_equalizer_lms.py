@@ -59,7 +59,7 @@ for i in range(channels.shape[0]):
     ax1.semilogy(J_avg, label='$H_{}$'.format(str(i)))
     ax2[i].stem(w_avg, label='$H_{}$'.format(str(i)))
     ax2[i].set_xlabel('$k$')
-    ax2[i].set_ylabel('$\hat{w}_k$')
+    ax2[i].set_ylabel('$\hat{w_a}_k$')
     ax2[i].legend()
 
 
