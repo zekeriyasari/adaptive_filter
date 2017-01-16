@@ -29,7 +29,7 @@ for i in range(channels.shape[0]):
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer.
-    f2 = RLSFilter(m2, w='zeros', delta=0.005, lamda=0.98)
+    f2 = RLSFilter(m2, w='zeros', delta=0.005, lamda=0.85)
 
     J = np.zeros((l, n))
     w = np.zeros((l, m2))
@@ -38,7 +38,7 @@ for i in range(channels.shape[0]):
         x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
         # generate the noise.
-        v = np.sqrt(0.01) * np.random.randn(n + m2 - 1)
+        v = np.sqrt(0.1) * np.random.randn(n + m2 - 1)
 
         # filter the data from the channel.
         data_matrix = input_from_history(x, m1)

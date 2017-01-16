@@ -20,7 +20,7 @@ l = 100  # number of trials.
 delay = int(m1 / 2) + int(m2 / 2)
 
 # try the system for different  channel models.
-channels = np.array([[0.25, 1.0, 0.25]])
+channels = np.array([[-0.25, 1.0, 0.25]])
 
 # take two figures for the plots
 fig1, ax1 = get_learning_curve_plot()  # plots the learning curves.
@@ -34,7 +34,7 @@ for i in range(channels.shape[0]):
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer with lms filter.
-    f_lms = LMSFilter(m2, mu=0.01, w='zeros')
+    f_lms = LMSFilter(m2, mu=0.0, w='zeros')
 
     # construct the equalizer with lms filter.
     f_rls = RLSFilter(m2, w='zeros', delta=0.005, lamda=0.98)
@@ -48,7 +48,7 @@ for i in range(channels.shape[0]):
         x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
         # generate the noise.
-        v = np.sqrt(0.0001) * np.random.randn(n + m2 - 1)
+        v = np.sqrt(0.1) * np.random.randn(n + m2 - 1)
 
         # filter the data from the channel.
         data_matrix = input_from_history(x, m1)
