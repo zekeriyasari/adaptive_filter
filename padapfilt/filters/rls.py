@@ -83,9 +83,9 @@ class RLSFilter(BaseFilter):
             n-by_n data matrix to be filtered.
 
         :return:
-            y: ndarray
+            y_a: ndarray
                 n-by-1 filtered output
-            w: ndarray
+            w_a: ndarray
                 m-by-1 filter tap weights
             ksi: ndarray
                 n-by-1 filtering error.

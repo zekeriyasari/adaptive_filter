@@ -28,3 +28,4 @@ def acf(x, l):
     y = np.roll(x, l)
     y[:l] = 0
     return np.correlate(x, y, mode='valid')
+

@@ -1,4 +1,3 @@
-
 from padapfilt.utils import *
 from padapfilt.filters.base_filter import BaseFilter
 import padapfilt.constants as co
@@ -57,9 +56,9 @@ class LMSFilter(BaseFilter):
             n-by_n data matrix to be filtered.
 
         :return:
-            y: ndarray
+            y_a: ndarray
                 n-by-1 filtered output
-            w: ndarray
+            w_a: ndarray
                 m-by-1 filter tap weights
             ksi: ndarray
                 n-by-1 filtering error.
@@ -75,4 +74,3 @@ class LMSFilter(BaseFilter):
         for l in range(n):
             y[l], e[l] = self.adapt(d_vector[l], u_matrix[l])
         return y, e, self._w
-

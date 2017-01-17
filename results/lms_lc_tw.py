@@ -29,11 +29,7 @@ for i in range(channels.shape[0]):
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer.
-<<<<<<< HEAD
-    f2 = LMSFilter(m2, mu=0.06, w='zeros')
-=======
-    f2 = LMSFilter(m2, mu=0.05, w='zeros')
->>>>>>> beebc67f8600e5340572bb3d339b5d52c2ad9a17
+    f2 = LMSFilter(m2, mu=0.01, w='zeros')
 
     J = np.zeros((l, n))
     w = np.zeros((l, m2))
@@ -42,11 +38,7 @@ for i in range(channels.shape[0]):
         x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
         # generate the noise.
-<<<<<<< HEAD
         v = np.sqrt(0.1) * np.random.randn(n + m2 - 1)
-=======
-        v = np.sqrt(0.001) * np.random.randn(n + m2 - 1)
->>>>>>> beebc67f8600e5340572bb3d339b5d52c2ad9a17
 
         # filter the data from the channel.
         data_matrix = input_from_history(x, m1)

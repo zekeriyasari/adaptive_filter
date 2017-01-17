@@ -7,7 +7,7 @@ from padapfilt.constants import *
 class BaseFilter(object):
     """
     Creates a base filter with `m` number of taps
-    and `w` initial filter taps.
+    and `w_a` initial filter taps.
     """
 
     _count = 0
@@ -49,7 +49,7 @@ class BaseFilter(object):
         Estimates the filter output for the input array
         :param u: ndarray,
             tap-input m-by-1 vector
-        :return y: flaot
+        :return y_a: flaot
             output of the filter
         """
 

@@ -29,4 +29,4 @@ ax[1].plot(y)
 
 ax[0].set_title('mes = {0}'.format(mse))
 plt.show()
-# TODO: Results are not as expected !!!
+# TODO: results are not as expected !!!
