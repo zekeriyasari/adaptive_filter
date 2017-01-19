@@ -1,34 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5be7fdfe-013d-43c8-bdb2-0309a33d7c0e" name="Default" comment="fixed the __init__.py files">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/compare1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/equalizer1_rls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lms_step_size.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/ar_model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/channel_equalizer_lms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/channel_equalizer_rls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/lms_deneme.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/lms_implementation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/rls_deneme.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/rls_implementation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/wiener_filter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plotting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results/lms_lc_tw.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/compare0.py" afterPath="$PROJECT_DIR$/results/raised_cosine_channel/compare0.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/equalizer0_lms.py" afterPath="$PROJECT_DIR$/results/raised_cosine_channel/equalizer0_lms.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/equalizer0_rls.py" afterPath="$PROJECT_DIR$/results/raised_cosine_channel/equalizer0_rls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/equalizer1_lms.py" afterPath="$PROJECT_DIR$/results/term_project/lms_lc_tw.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/results/compare_lms_rls.py" afterPath="$PROJECT_DIR$/results/term_project/compare_lms_rls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/results/lms_snr_compare.py" afterPath="$PROJECT_DIR$/results/term_project/lms_snr_compare.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/results/lms_step_size_compare.py" afterPath="$PROJECT_DIR$/results/term_project/lms_step_size_compare.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/results/rls_forgetting_factor_compare.py" afterPath="$PROJECT_DIR$/results/term_project/rls_forgetting_factor_compare.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/results/rls_lc_tw.py" afterPath="$PROJECT_DIR$/results/term_project/rls_lc_tw.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/results/rls_snr_compare.py" afterPath="$PROJECT_DIR$/results/term_project/rls_snr_compare.py" />
+    <list default="true" id="5be7fdfe-013d-43c8-bdb2-0309a33d7c0e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/padapfilt/utils.py" afterPath="$PROJECT_DIR$/padapfilt/utils.py" />
     </list>
     <ignored path="adaptive_filter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="compare_lms_rls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="compare_lms_rls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/results/term_project/compare_lms_rls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="189">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="e#56#91#0" expanded="true" />
               </folding>
@@ -110,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rls_snr_compare.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rls_snr_compare.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/term_project/rls_snr_compare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,12 +153,12 @@
         <option value="$PROJECT_DIR$/results/compare_lms_rls.py" />
         <option value="$PROJECT_DIR$/padapfilt/utils.py" />
         <option value="$PROJECT_DIR$/results/term_project/lms_lc_tw.py" />
-        <option value="$PROJECT_DIR$/results/term_project/compare_lms_rls.py" />
         <option value="$PROJECT_DIR$/results/term_project/rls_lc_tw.py" />
         <option value="$PROJECT_DIR$/results/term_project/lms_snr_compare.py" />
         <option value="$PROJECT_DIR$/results/term_project/lms_step_size_compare.py" />
         <option value="$PROJECT_DIR$/results/term_project/rls_forgetting_factor_compare.py" />
         <option value="$PROJECT_DIR$/results/term_project/rls_snr_compare.py" />
+        <option value="$PROJECT_DIR$/results/term_project/compare_lms_rls.py" />
       </list>
     </option>
   </component>
@@ -237,52 +211,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="results" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="term_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="results" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adaptive_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="padapfilt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -309,7 +237,7 @@
       <recent name="$PROJECT_DIR$/miscellenous" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.rls_snr_compare">
+  <component name="RunManager" selected="Python.compare_lms_rls">
     <configuration default="false" name="compare_lms_rls" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -538,10 +466,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.rls_snr_compare" />
-        <item index="1" class="java.lang.String" itemvalue="Python.rls_forgetting_factor_compare" />
-        <item index="2" class="java.lang.String" itemvalue="Python.lms_lc_tw" />
-        <item index="3" class="java.lang.String" itemvalue="Python.compare_lms_rls" />
+        <item index="0" class="java.lang.String" itemvalue="Python.compare_lms_rls" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rls_snr_compare" />
+        <item index="2" class="java.lang.String" itemvalue="Python.rls_forgetting_factor_compare" />
+        <item index="3" class="java.lang.String" itemvalue="Python.lms_lc_tw" />
         <item index="4" class="java.lang.String" itemvalue="Python.equalizer0_lms" />
       </list>
     </recent_temporary>
@@ -578,7 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1484638288812</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="re-structured project directories.">
+      <created>1484827311381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1484827311381</updated>
+    </task>
+    <task id="LOCAL-00005" summary="corrected equalizer's number of taps">
+      <created>1484827804950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1484827804950</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -614,10 +556,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21823932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1270427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -669,7 +611,9 @@
     <MESSAGE value="fixed the bugs for rls filter.&#10;" />
     <MESSAGE value="completed the project" />
     <MESSAGE value="fixed the __init__.py files" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the __init__.py files" />
+    <MESSAGE value="re-structured project directories." />
+    <MESSAGE value="corrected equalizer's number of taps" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected equalizer's number of taps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -945,16 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/term_project/compare_lms_rls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <element signature="e#56#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/term_project/lms_lc_tw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -997,9 +931,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/results/term_project/rls_snr_compare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="42">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/compare_lms_rls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#56#91#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
