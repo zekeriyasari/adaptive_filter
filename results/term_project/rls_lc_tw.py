@@ -1,9 +1,8 @@
 # Channel equalizer implemented using
-# LMS adaptive filtering.
+# RLS adaptive filtering.
 
 
-from padapfilt.filters.lms import *
-from plotting import *
+from padapfilt.filters.rls import *
 
 # determine simulation parameters.
 n = 2000  # number of input data samples to the equalizer.
@@ -12,7 +11,7 @@ m2 = 21  # number of taps of equalizer
 l = 100  # number of trials.
 delay = int(m1 / 2) + int(m2 / 2)
 
-# try the system for different  channel models.
+# try the system four channel models.
 channels = np.array([[0.25, 1.0, 0.25],
                      [0.25, 1.0, -0.25],
                      [-0.25, 1.0, 0.25]])
@@ -29,7 +28,7 @@ for i in range(channels.shape[0]):
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer.
-    f2 = LMSFilter(m2, mu=0.01, w='zeros')
+    f2 = RLSFilter(m2, w='zeros', delta=0.005, lamda=0.98)
 
     J = np.zeros((l, n))
     w = np.zeros((l, m2))
@@ -38,7 +37,7 @@ for i in range(channels.shape[0]):
         x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
         # generate the noise.
-        v = np.sqrt(0.1) * np.random.randn(n + m2 - 1)
+        v = np.sqrt(0.001) * np.random.randn(n + m2 - 1)
 
         # filter the data from the channel.
         data_matrix = input_from_history(x, m1)

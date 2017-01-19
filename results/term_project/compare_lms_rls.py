@@ -2,29 +2,21 @@
 
 from padapfilt.filters.lms import *
 from padapfilt.filters.rls import *
-from plotting import *
-
-
-def raised_cos(x_in, w_in=2.9):
-    """
-    Raised cosine inter-symbol interference channel model.
-    """
-    return 0.5 * (1 + np.cos(2 * np.pi / w_in * (x_in - 2)))
 
 
 # determine simulation parameters.
-n = 5000  # number of input data samples to the equalizer.
+n = 2000  # number of input data samples to the equalizer.
 m1 = 3  # number of taps of channel.
 m2 = 11  # number of taps of equalizer
 l = 100  # number of trials.
 delay = int(m1 / 2) + int(m2 / 2)
 
 # try the system for different  channel models.
-channels = np.array([[-0.25, 1.0, 0.25]])
+channels = np.array([[0.25, 1.0, -0.25]])
 
 # take two figures for the plots
 fig1, ax1 = get_learning_curve_plot()  # plots the learning curves.
-fig2, ax2 = get_tap_weights_graph(2)  # plots found filter taps.
+fig2, ax2 = get_tap_weights_graph(1)  # plots found filter taps.
 
 for i in range(channels.shape[0]):
     # construct the channel.
@@ -34,10 +26,10 @@ for i in range(channels.shape[0]):
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer with lms filter.
-    f_lms = LMSFilter(m2, mu=0.0, w='zeros')
+    f_lms = LMSFilter(m2, mu=0.01, w='zeros')
 
     # construct the equalizer with lms filter.
-    f_rls = RLSFilter(m2, w='zeros', delta=0.005, lamda=0.98)
+    f_rls = RLSFilter(m2, w='zeros', delta=0.005, lamda=0.85)
 
     J_lms = np.zeros((l, n))
     w_lms = np.zeros((l, m2))
@@ -82,10 +74,8 @@ for i in range(channels.shape[0]):
     ax1.semilogy(J_rls_avg, label='$RLS$')
     ax1.legend()
 
-    ax2[0].stem(w_rls_avg, label='$LMS$')
-    ax2[0].legend()
-
-    ax2[1].stem(w_rls_avg, label='$RLS$')
-    ax2[1].legend()
+    ax2.stem(w_rls_avg, label='$LMS$')
+    ax2.stem(w_rls_avg, label='$RLS$', markerfmt='D')
+    ax2.legend()
 
 plt.show()

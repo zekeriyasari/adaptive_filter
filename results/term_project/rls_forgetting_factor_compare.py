@@ -1,9 +1,8 @@
-# Channel equalizer implemented using
-# LMS adaptive filtering.
+# Performance comparison of RLS channel equalizer
+# for different forgetting factors.
 
 
-from padapfilt.filters.lms import *
-from plotting import *
+from padapfilt.filters.rls import *
 
 # determine simulation parameters.
 n = 2000  # number of input data samples to the equalizer.
@@ -26,12 +25,10 @@ h = channel
 f1 = BaseFilter(m1, w=h)
 
 # construct two equalizer.
-f2 = LMSFilter(m2, mu=0.01, w='zeros')
-
-sigma_a = 0.001
-sigma_b = 0.1
-SNR_a = 10 * np.log10(1.0 / sigma_a)
-SNR_b = 10 * np.log10(1.0 / sigma_b)
+lambda_0 = 0.98
+lambda_1 = 0.85
+f2_a = RLSFilter(m2, w='zeros', lamda=lambda_0, delta=0.005)
+f2_b = RLSFilter(m2, w='zeros', lamda=lambda_1, delta=0.005)
 
 J_a = np.zeros((l, n))
 J_b = np.zeros((l, n))
@@ -42,45 +39,41 @@ for k in range(l):
     x = 2 * np.round(np.random.rand(n + m1 + m2 - 2)) - 1
 
     # generate the noise.
-    v_a = np.sqrt(sigma_a) * np.random.randn(n + m2 - 1)  # 30 dB SNR
-    v_b = np.sqrt(sigma_b) * np.random.randn(n + m2 - 1)  # 10 dB SNR
+    v = np.sqrt(0.001) * np.random.randn(n + m2 - 1)
 
     # filter the data from the channel.
     data_matrix = input_from_history(x, m1)
     u = np.zeros(data_matrix.shape[0])
     for item in range(data_matrix.shape[0]):
         u[item] = f1.estimate(data_matrix[item])
-    u_a = u + v_a
-    u_b = u + v_b
+    u += v
 
     # calculate the equalizer output.
     d_vector = x[delay:n + delay:]
-    u_matrix_a = input_from_history(u_a, m2)
-    u_matrix_b = input_from_history(u_b, m2)
+    u_matrix = input_from_history(u, m2)
 
-    y_a, e_a, w_a[k] = f2.run(d_vector, u_matrix_a)
-    # reset the equalizer for the next trial.
-    f2.reset()  # reset the filter to zero tap-weights.
-    y_b, e_b, w_b[k] = f2.run(d_vector, u_matrix_b)
-    # reset the equalizer for the next trial.
-    f2.reset()  # reset the filter to zero tap-weights.
+    y_a, e_a, w_a[k] = f2_a.run(d_vector, u_matrix)
+    y_b, e_b, w_b[k] = f2_b.run(d_vector, u_matrix)
 
     # calculate learning curve.
     J_a[k] = e_a ** 2
     J_b[k] = e_b ** 2
 
+    # reset the equalizer for the next trial.
+    f2_a.reset()  # reset the filter to zero tap-weights.
+    f2_b.reset()  # reset the filter to zero tap-weights.
 
 J_avg_a = J_a.mean(axis=0)
 w_avg_a = w_a.mean(axis=0)
 J_avg_b = J_b.mean(axis=0)
 w_avg_b = w_b.mean(axis=0)
 
-ax1.semilogy(J_avg_a, label=r'$SNR = {}dB$'.format(int(SNR_a)))
-ax1.semilogy(J_avg_b, label=r'$SNR = {}dB$'.format(int(SNR_b)))
+ax1.semilogy(J_avg_a, label=r'$\lambda = {}$'.format(lambda_0))
+ax1.semilogy(J_avg_b, label=r'$\lambda = {}$'.format(lambda_1))
 ax1.legend()
 
-ax2.stem(w_avg_a, label=r'$SNR = {}dB$'.format(int(SNR_a)))
-ax2.stem(w_avg_b, label=r'$SNR = {}dB$'.format(int(SNR_b)), markerfmt='D')
+ax2.stem(w_avg_a, label=r'$\lambda = {}$'.format(lambda_0))
+ax2.stem(w_avg_b, label=r'$\lambda = {}$'.format(lambda_1), markerfmt='D')
 ax2.legend()
 
 plt.show()

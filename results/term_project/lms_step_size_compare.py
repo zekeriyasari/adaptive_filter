@@ -1,9 +1,8 @@
-# Channel equalizer implemented using
-# LMS adaptive filtering.
+# Performance comparison of LMS channel equalizer
+# for different step size.
 
 
 from padapfilt.filters.lms import *
-from plotting import *
 
 # determine simulation parameters.
 n = 2000  # number of input data samples to the equalizer.

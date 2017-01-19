@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5be7fdfe-013d-43c8-bdb2-0309a33d7c0e" name="Default" comment="">
+    <list default="true" id="5be7fdfe-013d-43c8-bdb2-0309a33d7c0e" name="Default" comment="fixed the __init__.py files">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/compare1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/equalizer1_rls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lms_step_size.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/ar_model.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/channel_equalizer_lms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/channel_equalizer_rls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/lms_deneme.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/lms_implementation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/rls_deneme.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/rls_implementation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/miscellenous/wiener_filter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plotting.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/lms_lc_tw.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compare0.py" afterPath="$PROJECT_DIR$/results/raised_cosine_channel/compare0.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/equalizer0_lms.py" afterPath="$PROJECT_DIR$/results/raised_cosine_channel/equalizer0_lms.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/equalizer0_rls.py" afterPath="$PROJECT_DIR$/results/raised_cosine_channel/equalizer0_rls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/equalizer1_lms.py" afterPath="$PROJECT_DIR$/results/term_project/lms_lc_tw.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/compare_lms_rls.py" afterPath="$PROJECT_DIR$/results/term_project/compare_lms_rls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/lms_snr_compare.py" afterPath="$PROJECT_DIR$/results/term_project/lms_snr_compare.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/lms_step_size_compare.py" afterPath="$PROJECT_DIR$/results/term_project/lms_step_size_compare.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/rls_forgetting_factor_compare.py" afterPath="$PROJECT_DIR$/results/term_project/rls_forgetting_factor_compare.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/rls_lc_tw.py" afterPath="$PROJECT_DIR$/results/term_project/rls_lc_tw.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/results/rls_snr_compare.py" afterPath="$PROJECT_DIR$/results/term_project/rls_snr_compare.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/padapfilt/__init__.py" afterPath="$PROJECT_DIR$/padapfilt/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/padapfilt/filters/__init__.py" afterPath="$PROJECT_DIR$/padapfilt/filters/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/padapfilt/utils.py" afterPath="$PROJECT_DIR$/padapfilt/utils.py" />
     </list>
     <ignored path="adaptive_filter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +47,80 @@
     <favorites_list name="adaptive_filter" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="compare_lms_rls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/term_project/compare_lms_rls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding>
+                <element signature="e#56#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lms_lc_tw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/term_project/lms_lc_tw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lms_snr_compare.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/term_project/lms_snr_compare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lms_step_size_compare.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/term_project/lms_step_size_compare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rls_forgetting_factor_compare.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/term_project/rls_forgetting_factor_compare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rls_lc_tw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/term_project/rls_lc_tw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rls_snr_compare.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/results/term_project/rls_snr_compare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,7 +140,6 @@
         <option value="$PROJECT_DIR$/channel_equalizer_lms.py" />
         <option value="$PROJECT_DIR$/deneme.py" />
         <option value="$PROJECT_DIR$/lms_deneme.py" />
-        <option value="$PROJECT_DIR$/padapfilt/filters/rls.py" />
         <option value="$PROJECT_DIR$/rls_deneme.py" />
         <option value="$PROJECT_DIR$/tests/test_rls.py" />
         <option value="$PROJECT_DIR$/channel_equalizer_rls.py" />
@@ -52,20 +148,14 @@
         <option value="$PROJECT_DIR$/miscellenous/rls_deneme.py" />
         <option value="$PROJECT_DIR$/miscellenous/lms_deneme.py" />
         <option value="$PROJECT_DIR$/dene.py" />
-        <option value="$PROJECT_DIR$/equalizer0_lms.py" />
         <option value="$PROJECT_DIR$/equalizer0_rls.py" />
-        <option value="$PROJECT_DIR$/padapfilt/utils.py" />
         <option value="$PROJECT_DIR$/padapfilt/filters/base_filter.py" />
         <option value="$PROJECT_DIR$/padapfilt/filters/lms.py" />
         <option value="$PROJECT_DIR$/compare.py" />
-        <option value="$PROJECT_DIR$/compare0.py" />
-        <option value="$PROJECT_DIR$/plotting.py" />
         <option value="$PROJECT_DIR$/equalizer1_rls.py" />
         <option value="$PROJECT_DIR$/compare1.py" />
         <option value="$PROJECT_DIR$/lms_step_size.py" />
         <option value="$PROJECT_DIR$/equalizer1_lms.py" />
-        <option value="$PROJECT_DIR$/padapfilt/filters/__init__.py" />
-        <option value="$PROJECT_DIR$/padapfilt/__init__.py" />
         <option value="$PROJECT_DIR$/test_package/file2.py" />
         <option value="$PROJECT_DIR$/test_package/subpackge.py" />
         <option value="$PROJECT_DIR$/test_package/subpackage/module_m1.py" />
@@ -77,6 +167,24 @@
         <option value="$PROJECT_DIR$/test_package/subpackage_a/__init__.py" />
         <option value="$PROJECT_DIR$/test_package/subpackage_b/__init__.py" />
         <option value="$PROJECT_DIR$/test_package/__init__.py" />
+        <option value="$PROJECT_DIR$/padapfilt/filters/__init__.py" />
+        <option value="$PROJECT_DIR$/padapfilt/__init__.py" />
+        <option value="$PROJECT_DIR$/plotting.py" />
+        <option value="$PROJECT_DIR$/wokrspace.py" />
+        <option value="$PROJECT_DIR$/results/rls_lc_tw.py" />
+        <option value="$PROJECT_DIR$/padapfilt/filters/rls.py" />
+        <option value="$PROJECT_DIR$/compare0.py" />
+        <option value="$PROJECT_DIR$/results/lms_lc_tw.py" />
+        <option value="$PROJECT_DIR$/equalizer0_lms.py" />
+        <option value="$PROJECT_DIR$/results/compare_lms_rls.py" />
+        <option value="$PROJECT_DIR$/padapfilt/utils.py" />
+        <option value="$PROJECT_DIR$/results/term_project/lms_lc_tw.py" />
+        <option value="$PROJECT_DIR$/results/term_project/compare_lms_rls.py" />
+        <option value="$PROJECT_DIR$/results/term_project/rls_lc_tw.py" />
+        <option value="$PROJECT_DIR$/results/term_project/lms_snr_compare.py" />
+        <option value="$PROJECT_DIR$/results/term_project/lms_step_size_compare.py" />
+        <option value="$PROJECT_DIR$/results/term_project/rls_forgetting_factor_compare.py" />
+        <option value="$PROJECT_DIR$/results/term_project/rls_snr_compare.py" />
       </list>
     </option>
   </component>
@@ -111,7 +219,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -140,12 +247,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="term_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive_filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive_filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive_filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adaptive_filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="padapfilt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,11 +304,30 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/results/term_project" />
+      <recent name="$PROJECT_DIR$/results/raised_cosine_channel" />
       <recent name="$PROJECT_DIR$/miscellenous" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.__init__">
-    <configuration default="false" name="lms_step_size" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.rls_snr_compare">
+    <configuration default="false" name="compare_lms_rls" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/results" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="adaptive_filter" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/results/term_project/compare_lms_rls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="equalizer0_lms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -180,75 +339,58 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="adaptive_filter" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lms_step_size.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/results/raised_cosine_channel/equalizer0_lms.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="lms_lc_tw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_package" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/results" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="adaptive_filter" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_package/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/results/term_project/lms_lc_tw.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="file1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="rls_forgetting_factor_compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_package" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/results/term_project" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="adaptive_filter" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_package/file1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/results/term_project/rls_forgetting_factor_compare.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="module_m1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="rls_snr_compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_package/subpackage_a" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/results/term_project" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="adaptive_filter" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_package/subpackage_a/module_m1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_package/subpackage_b" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="adaptive_filter" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_package/subpackage_b/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/results/term_project/rls_snr_compare.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -388,19 +530,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.lms_step_size" />
-      <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="2" class="java.lang.String" itemvalue="Python.file1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.module_m1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.compare_lms_rls" />
+      <item index="1" class="java.lang.String" itemvalue="Python.equalizer0_lms" />
+      <item index="2" class="java.lang.String" itemvalue="Python.lms_lc_tw" />
+      <item index="3" class="java.lang.String" itemvalue="Python.rls_forgetting_factor_compare" />
+      <item index="4" class="java.lang.String" itemvalue="Python.rls_snr_compare" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__ (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.file1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.module_m1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.lms_step_size" />
+        <item index="0" class="java.lang.String" itemvalue="Python.rls_snr_compare" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rls_forgetting_factor_compare" />
+        <item index="2" class="java.lang.String" itemvalue="Python.lms_lc_tw" />
+        <item index="3" class="java.lang.String" itemvalue="Python.compare_lms_rls" />
+        <item index="4" class="java.lang.String" itemvalue="Python.equalizer0_lms" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484148181662</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed the __init__.py files">
+      <created>1484638288812</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1484638288812</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -465,15 +614,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1055" extended-state="7" />
-    <editor active="false" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12018977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21823932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3372591" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5963597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58672374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37794432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304068" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -483,7 +633,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -519,7 +668,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed the bugs for rls filter.&#10;" />
     <MESSAGE value="completed the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the project" />
+    <MESSAGE value="fixed the __init__.py files" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the __init__.py files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -530,53 +680,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/equalizer1_lms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equalizer1_rls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lms_step_size.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equalizer1_lms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equalizer1_rls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compare1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -605,24 +713,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compare0.py">
+    <entry file="file://$PROJECT_DIR$/results/raised_cosine_channel/compare0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compare0.py">
+    <entry file="file://$PROJECT_DIR$/results/raised_cosine_channel/compare0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/padapfilt/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -697,59 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/padapfilt/filters/rls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/padapfilt/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/padapfilt/filters/base_filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equalizer0_lms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/padapfilt/filters/lms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equalizer0_rls.py">
+    <entry file="file://$PROJECT_DIR$/results/raised_cosine_channel/equalizer0_rls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -767,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compare1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/equalizer1_rls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -788,20 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/padapfilt/filters/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/padapfilt/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_package/file2.py" />
     <entry file="file://$PROJECT_DIR$/test_package/subpackge.py" />
     <entry file="file://$PROJECT_DIR$/test_package/subpackage_b/nodule_n2.py" />
@@ -812,5 +843,165 @@
     <entry file="file://$PROJECT_DIR$/test_package/__init__.py" />
     <entry file="file://$PROJECT_DIR$/test_package/subpackage_b/__init__.py" />
     <entry file="file://$PROJECT_DIR$/test_package/subpackage_a/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/padapfilt/filters/base_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-628">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/padapfilt/filters/lms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/padapfilt/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/padapfilt/filters/rls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/raised_cosine_channel/equalizer0_lms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding>
+            <element signature="e#66#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/raised_cosine_channel/compare0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-670">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding>
+            <element signature="e#56#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wokrspace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compare1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/padapfilt/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/padapfilt/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#2#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/padapfilt/filters/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/compare_lms_rls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding>
+            <element signature="e#56#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/lms_lc_tw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/lms_snr_compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/lms_step_size_compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/rls_forgetting_factor_compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/rls_lc_tw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/term_project/rls_snr_compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

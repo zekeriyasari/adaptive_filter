@@ -3,40 +3,33 @@
 
 
 from padapfilt.filters.lms import *
-from plotting import *
-
-
-def raised_cos(x_in, w_in=2.9):
-    """
-    Raised cosine inter-symbol interference channel model.
-    """
-    return 0.5 * (1 + np.cos(2 * np.pi / w_in * (x_in - 2)))
-
 
 # determine simulation parameters.
-n = 750  # number of input data samples to the equalizer.
-m1 = 5  # number of taps of channel.
-m2 = 11  # number of taps of equalizer
-l = 200  # number of trials.
+n = 2000  # number of input data samples to the equalizer.
+m1 = 3  # number of taps of channel.
+m2 = 21  # number of taps of equalizer
+l = 100  # number of trials.
 delay = int(m1 / 2) + int(m2 / 2)
 
-# try the system four channel models.
-omega = np.array([2.9, 3.1, 3.3, 3.5])
+# try the system for different  channel models.
+channels = np.array([[0.25, 1.0, 0.25],
+                     [0.25, 1.0, -0.25],
+                     [-0.25, 1.0, 0.25]])
 
 # take two figures for the plots
 fig1, ax1 = get_learning_curve_plot()  # plots the learning curves.
-fig2, ax2 = get_tap_weights_graph(len(omega))  # plots found filter taps.
+fig2, ax2 = get_tap_weights_graph(channels.shape[0])  # plots found filter taps.
+fig3, ax3 = get_tap_weights_graph(channels.shape[0])  # plots found filter taps.
 
-for i in range(len(omega)):
+for i in range(channels.shape[0]):
     # construct the channel.
-    h = np.array([y for y in map(lambda t: raised_cos(t, w_in=omega[i]) if 1 <= t <= 3 else 0,
-                                 np.arange(m1))])  # channel impulse response
+    h = channels[i]
 
     # construct the channel filter
     f1 = BaseFilter(m1, w=h)
 
     # construct the equalizer.
-    f2 = LMSFilter(m2, mu=0.075, w='zeros')
+    f2 = LMSFilter(m2, mu=0.05, w='zeros')
 
     J = np.zeros((l, n))
     w = np.zeros((l, m2))
@@ -54,10 +47,10 @@ for i in range(len(omega)):
             u[item] = f1.estimate(data_matrix[item])
         u += v
 
-        u_matrix = input_from_history(u, m2)
-
         # calculate the equalizer output.
         d_vector = x[delay:n + delay:]
+
+        u_matrix = input_from_history(u, m2)
         y, e, w[k] = f2.run(d_vector, u_matrix)
 
         # calculate learning curve.
@@ -69,7 +62,12 @@ for i in range(len(omega)):
     J_avg = J.mean(axis=0)
     w_avg = w.mean(axis=0)
     ax1.semilogy(J_avg, label='$H_{}$'.format(i))
+    ax1.legend()
     ax2[i].stem(w_avg, label='$H_{}$'.format(i))
+    ax2[i].legend()
 
-ax1.legend()
+    # check zero-forcing property of the equalizer.
+    ax3[i].stem(np.convolve(h, w_avg, 'same'), label='$H_{}$'.format(i))
+    ax3[i].legend()
+
 plt.show()

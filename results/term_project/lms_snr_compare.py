@@ -1,9 +1,8 @@
-# Channel equalizer implemented using
-# LMS adaptive filtering.
+# Performance comparison of LMS channel equalizer
+# for different SNR levels.
 
 
-from padapfilt.filters.rls import *
-from plotting import *
+from padapfilt.filters.lms import *
 
 # determine simulation parameters.
 n = 2000  # number of input data samples to the equalizer.
@@ -26,7 +25,7 @@ h = channel
 f1 = BaseFilter(m1, w=h)
 
 # construct two equalizer.
-f2 = RLSFilter(m2, w='zeros', lamda=0.98, delta=0.005)
+f2 = LMSFilter(m2, mu=0.01, w='zeros')
 
 sigma_a = 0.001
 sigma_b = 0.1
